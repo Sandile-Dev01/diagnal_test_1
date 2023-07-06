@@ -2,17 +2,27 @@
 
 @media (min-width: 0) {
   nav {
+    position: sticky;
+    top: 0;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-between;
-    padding: 1rem;
+    gap: var(--rem);
+    padding: var(--rem);
+    box-shadow: 0 1rem 1rem 0.2rem #171717;
   }
 
   nav h1 {
-    font-size: 2rem;
+    font-size: 8vw;
+  }
+
+  picture {
+    width: 7vw;
+    object-fit: cover;
   }
 
   picture img {
+    width: 100%;
     cursor: pointer;
   }
 
@@ -20,5 +30,16 @@
     display: flex;
     align-items: center;
     gap: 1em;
+  }
+}
+
+@media (min-width: 1024px) {
+  picture {
+    width: 3vw;
+    object-fit: cover;
+  }
+
+  nav h1 {
+    font-size: 3vw;
   }
 }

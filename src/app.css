@@ -8,3 +8,11 @@
 .movie_content::-webkit-scrollbar {
   display: none;
 }
+
+.app {
+  overflow: hidden;
+}
+
+.app::-webkit-scrollbar {
+  display: none;
+}

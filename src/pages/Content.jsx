@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import Img from "./assets/poster2.jpg";
+
 import "./content.css";
 
-function Content() {
+function Content({ src }) {
   const [articleData, setArticleData] = useState(null);
 
   useEffect(() => {
@@ -32,7 +32,7 @@ function Content() {
           <div className="movie_item" key={index}>
             <div className="article_category_container">
               <div className="movie_img">
-                <img src={Img} alt="movie-poster" />
+                <img src={src} alt="movie-poster" />
               </div>
 
               <h1>{article.name}</h1>
