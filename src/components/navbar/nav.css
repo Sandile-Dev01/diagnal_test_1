@@ -1,0 +1,24 @@
+/* media queries */
+
+@media (min-width: 0) {
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+
+  nav h1 {
+    font-size: 2rem;
+  }
+
+  picture img {
+    cursor: pointer;
+  }
+
+  .back_text_container {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+  }
+}
