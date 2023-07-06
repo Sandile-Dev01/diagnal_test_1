@@ -1,0 +1,10 @@
+.movie_content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  padding: 0 1rem;
+}
+
+.movie_content::-webkit-scrollbar {
+  display: none;
+}
